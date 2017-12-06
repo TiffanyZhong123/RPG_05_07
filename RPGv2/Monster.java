@@ -7,7 +7,7 @@ public class Monster extends Character {
     }
 
     public String toString(){
-        return "has strength " 
+        return "monster, who has strength " 
              + strength + ", HP "
              + HP + ", defense " 
              + defense + ", and an attackRating of " 
