@@ -8,12 +8,9 @@ public class Protagonist extends Character {
              + defense + ", and an attackRating of " 
              + attackRating;
     }
-    
-    public Protagonist( String n) {
-	name = n;
-    }
 
-    public Protagonist( int a, int b, int c, double d) {
+    public Protagonist( String n, int a, int b, int c, double d) {
+	name = n;
 	HP = a;
 	strength = b;
 	defense = c;

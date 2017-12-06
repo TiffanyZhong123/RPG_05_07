@@ -50,6 +50,7 @@ public class YoRPG
     =============================================*/
   public void newGame()
   {
+    int i = 1;
     String s;
     String name = "";
     s = "~~~ Welcome to Ye Olde RPG! ~~~\n";
@@ -65,7 +66,14 @@ public class YoRPG
 	    difficulty = Integer.parseInt( in.readLine() );
     } catch ( IOException e ) { }
 
-    s = "Intrepid protagonist, what doth thy call thyself? (State your name): ";
+    try {
+	System.out.println( "\nIntrepid protagonist, what art thou? (Choose avatar): " );
+	System.out.println( "\t1: A brute Warrior?\n\t2: An all-powerful Mage?\n\t3: Or a mysterious Assassin?" );
+	i = Integer.parseInt( in.readLine() );
+    }
+    catch ( IOException e ) { }
+    
+    s = "What doth thy call thyself? (State your name): ";
     System.out.print( s );
 
     try {
@@ -73,7 +81,12 @@ public class YoRPG
     } catch ( IOException e ) { }
 
     //instantiate the player's character
-    pat = new Protagonist( name );
+    if ( i == 2 )
+	pat = new Assassin( name );
+    else if ( i == 3 )
+	pat = new Mage( name );
+    else
+	pat = new Warrior( name );
 
   }//end newGame()
 
