@@ -101,13 +101,21 @@ public class YoRPG
   {
     int i = 1;
     int d1, d2;
+    double r = Math.random() * 3.0;
 
     if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
-	    System.out.println( "\nLo, yonder monster approacheth!" );
-
-	    smaug = new Monster();
+	if ( r <= 1.3 ) {
+	    smaug = new Minion();
+	    System.out.println( "\nLo, yonder Minion approacheth!" );
+	} else if ( r <= 2.3 ) {
+	    smaug = new Necromancer();
+	    System.out.println( "\nLo, yonder Necromancer approacheth!" );
+	} else {
+	    smaug = new Orc();
+	    System.out.println( "\nLo, yonder Orc approacheth!" );
+	}
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 

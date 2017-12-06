@@ -1,13 +1,13 @@
 public class Monster extends Character {
-    public Monster() {
-	HP = 150;
-	strength = (int) Math.random() * 45 + 20;
-	defense = 20;
-	attackRating = 0.4;
+    public Monster( int a, int b, int c, double d) {
+	HP = a;
+	strength = b;
+	defense = c;
+	attackRating = d;
     }
 
     public String toString(){
-        return "Has strength " 
+        return "has strength " 
              + strength + ", HP "
              + HP + ", defense " 
              + defense + ", and an attackRating of " 
