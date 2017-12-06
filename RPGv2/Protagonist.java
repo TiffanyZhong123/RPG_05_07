@@ -11,10 +11,13 @@ public class Protagonist extends Character {
     
     public Protagonist( String n) {
 	name = n;
-	HP = 125;
-	strength = 100;
-	defense = 40;
-	attackRating = 0.4;
+    }
+
+    public Protagonist( int a, int b, int c, double d) {
+	HP = a;
+	strength = b;
+	defense = c;
+	attackRating = d;
     }
 
     public String getName() {

@@ -5,4 +5,12 @@ public class Monster extends Character {
 	defense = 20;
 	attackRating = 0.4;
     }
+
+    public String toString(){
+        return "Has strength " 
+             + strength + ", HP "
+             + HP + ", defense " 
+             + defense + ", and an attackRating of " 
+             + attackRating;
+    }
 }
