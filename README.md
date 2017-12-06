@@ -1,4 +1,4 @@
-# RPG_period05_team07
+# RPGv2
 1. Character
 
    Contains all the common features of any type of character.
