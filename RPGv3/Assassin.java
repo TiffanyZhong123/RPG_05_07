@@ -1,6 +1,6 @@
 public class Assassin extends Protagonist {
     public Assassin( String n) {
-	super( n, 175, 110, 40, 0.9);
+	super( n, 175, 90, 40, 0.9);
     }
     public void specialize() {
         defense -= 5;
@@ -13,6 +13,11 @@ public class Assassin extends Protagonist {
     }
 
     public String toString() {
-        return "The Assassin: " + super.toString();
+        return "The Assassin: " + name
+	    + ", who has strength "
+	    + strength + ", HP "
+	    + HP + ", defense "
+	    + defense + ", and an attackRating of "
+	    + attackRating;
     }
 }

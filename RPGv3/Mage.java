@@ -1,6 +1,6 @@
 public class Mage extends Protagonist {
     public Mage( String n) {
-	super( n, 150, 120, 80, 0.6);
+	super( n, 150, 70, 80, 0.6);
     }
     public void specialize() {
         defense -= 5;
@@ -13,6 +13,11 @@ public class Mage extends Protagonist {
     }
 
     public String toString() {
-        return "The Mage: " + super.toString();
+        return "The Mage: " + name
+	    + ", who has strength "
+	    + strength + ", HP "
+	    + HP + ", defense "
+	    + defense + ", and an attackRating of "
+	    + attackRating;
     }
 }

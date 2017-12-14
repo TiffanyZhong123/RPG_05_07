@@ -1,6 +1,6 @@
 public class Warrior extends Protagonist {
     public Warrior( String n) {
-	super( n, 100, 150, 60, 0.4);
+	super( n, 100, 80, 60, 0.4);
     }
 
     public void specialize() {
@@ -14,6 +14,11 @@ public class Warrior extends Protagonist {
     }
 
     public String toString() {
-        return "The Warrior: " + name;
+        return "The Warrior: " + name
+	    + ", who has strength "
+	    + strength + ", HP "
+	    + HP + ", defense "
+	    + defense + ", and an attackRating of "
+	    + attackRating;
     }
 }
