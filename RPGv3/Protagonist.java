@@ -1,5 +1,3 @@
-public abstract class Protagonist extends Character {
- 
 /**
  * Abstract-ify toString (without changing the class's header):
  * Protagonist.java:1: error: Protagonist is not abstract and does not override abstract method toString() in Protagonist
@@ -22,6 +20,7 @@ public abstract class Protagonist extends Character {
  * 1 error
 **/
 
+public abstract class Protagonist extends Character {
     public String name;
 
     public abstract String toString();

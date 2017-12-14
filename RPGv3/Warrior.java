@@ -3,6 +3,15 @@ public class Warrior extends Protagonist {
 	super( n, 100, 80, 60, 0.4);
     }
 
+    public String toString() {
+        return "The Warrior: " + name
+	    + ", who has strength "
+	    + strength + ", HP "
+	    + HP + ", defense "
+	    + defense + ", and an attackRating of "
+	    + attackRating;
+    }
+    
     public void specialize() {
         defense -= 5;
 	attackRating += 0.5;
@@ -11,14 +20,5 @@ public class Warrior extends Protagonist {
     public void normalize() {
 	defense = 40;
 	attackRating = 0.4;
-    }
-
-    public String toString() {
-        return "The Warrior: " + name
-	    + ", who has strength "
-	    + strength + ", HP "
-	    + HP + ", defense "
-	    + defense + ", and an attackRating of "
-	    + attackRating;
     }
 }
